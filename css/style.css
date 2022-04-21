@@ -24,7 +24,6 @@
 #contenedor {
   width: 1200px;
   min-height: 600px;
-
   float: left;
 }
 /*Fin  contenedor */
@@ -98,6 +97,16 @@ aside {
   font-weight: 800;
 
   color: rgb(255, 179, 0);
+}
+
+nav div{
+  transition: 0.3s;
+  cursor: default;
+}
+
+nav>div:hover{
+  transform: scale(1.3);
+  transition: 0.3s;
 }
 
 /* Fin Nav Menu */

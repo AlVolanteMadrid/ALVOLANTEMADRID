@@ -8,7 +8,10 @@
   margin: 0px;
   padding: 0px;
   font-family: RobotoPc;
+  scroll-behavior: smooth;
 }
+
+
 
 /* contenedor para central*/
 .contenedorCentral {
@@ -36,6 +39,13 @@
   z-index: 2;
 }
 
+#ancla img {
+
+  height: 35px;
+
+}
+
+
 /* nav y menu */
 header {
   width: 1200px;
@@ -51,10 +61,12 @@ header nav {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: black;
+ 
 }
 
 #menu a {
   color: white;
+  font-weight: bold;
 }
 
 #menu ul {
@@ -183,6 +195,22 @@ footer h2 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.derInicio ul {
+
+  margin-left: 40px;
+  text-align: left;
+
+
+}
+
+.derInicio ul li {
+
+
+  text-align: left;
+  margin-top: 20px;
+
+}
+
 
 #texto3inicio {
   float: left;
@@ -259,6 +287,7 @@ footer h2 {
   padding-left: 40px;
   float: left;
   background-color: rgba(0, 174, 255, 0.927);
+  
 }
 
 #Mantenimiento .Serviciostitulo {
@@ -281,7 +310,7 @@ footer h2 {
 
 #Chapa {
   width: 1200px;
-  height: 700px;
+  min-height:1200px;
   float: left;
 }
 
@@ -302,6 +331,122 @@ footer h2 {
   height: 400px;
   float: left;
 }
+
+/* seguros girando */
+.contenedorImagenCentral{
+  height:500px ;
+  width: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 10%;
+  margin-left: 30%;
+  animation-name: example;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear ;
+}
+
+
+
+ @keyframes example {
+  from {    transform: rotate(360deg);}
+
+}
+
+
+@keyframes example2 {
+  from {    transform: rotate(-360deg);}
+
+}  
+
+
+.contenedorImagenCentral img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 100%;
+
+}
+.axa{
+  right: -70px;
+}
+
+.mafre{
+  top:-50px;
+  left: 200px;
+}
+
+.mutua{
+  left: -70px;
+}
+
+.Zurich{
+  bottom: -50px;
+
+}
+
+.gerenali{
+  bottom: 30px; 
+  left: 30px;
+}
+
+
+.liberty{
+  bottom: 45px;
+  right:  10px;
+
+}
+
+
+
+.caser{
+  top: 20px; 
+  left: 0px;
+}
+
+
+.Allianz{
+  top: 35px;
+  right:  -10px;
+
+}
+
+
+
+.imagenCentral{
+  background: url(../img/logo.png);
+  background-size: cover;
+ height: 220px;
+ width: 320px;
+
+ 
+ animation-name: example2;
+ animation-duration: 40s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Neumaticos {
   width: 1200px;
@@ -334,8 +479,15 @@ footer h2 {
   height: 400px;
   width: 850px;
   float: right;
+
 }
 
+.neumaticosder  p{
+ 
+  text-align: center;
+  float: left;
+  
+}
 
 /* ---------------------------------- */
 

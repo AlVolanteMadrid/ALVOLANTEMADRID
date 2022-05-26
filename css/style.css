@@ -598,10 +598,15 @@ p {
 }
 
 .field {
-  border: 1px solid black;
+  border: none;
+  border-bottom: 1px solid black;
   padding: 5px;
   width: 400px;
   outline: none;
+  background: none;
+}
+.field3{
+  width: 400px;
 }
 
 .field:focus {
